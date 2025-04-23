@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-oswald: 'Oswald', sans-serif;
+  --font-sans: Arial, sans-serif;
+
+  --color-karate-red: #e0af25;
+  --color-karate-black: #000;
+  --color-karate-brown: #260b0b;
+  --color-karate-orange: #ff9e3e;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+body {
+  position: relative;
+  padding-bottom: 0;
+}
+
+#__next,
+main {
+  height: 100%;
+}
+
+/* Para mantener una mejor relación de aspecto en la imagen de fondo */
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 96px;
+  }
+}
