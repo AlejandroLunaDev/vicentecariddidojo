@@ -26,7 +26,7 @@ const Navbar = () => {
             <li key={item.path}>
               <Link
                 href={item.path}
-                className='font-oswald text-karate-orange hover:text-white uppercase tracking-wide px-4 py-3 text-sm block'
+                className='font-oswald text-karate-orange hover:text-white uppercase px-4 py-3 text-xl block'
               >
                 {item.label}
               </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <li key={item.path}>
               <Link
                 href={item.path}
-                className='font-oswald text-karate-orange hover:text-white uppercase tracking-wide px-4 py-3 text-sm block'
+                className='font-oswald text-karate-orange hover:text-white uppercase  px-4 py-3 text-xl block'
               >
                 {item.label}
               </Link>
