@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Home = () => {
   // Número de WhatsApp con formato internacional
-  const phoneNumber = '+549XXXXXXXXX'; // Reemplazar con el número real
-  const whatsappUrl = `https://wa.me/${+5493515053743}?text=Hola%20Sensei%20Vicente%20Cariddi,%20me%20gustaría%20tener%20más%20información%20sobre%20la%20escuela.`;
+  const phoneNumber = '+5493515053743';
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hola%20Sensei%20Vicente%20Cariddi,%20me%20gustaría%20tener%20más%20información%20sobre%20la%20escuela.`;
 
   // Schema.org structured data para SEO
   const structuredData = {
@@ -37,21 +37,22 @@ const Home = () => {
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className='relative h-screen w-full overflow-hidden'>
+      <div className='relative h-screen w-full overflow-hidden pt-20'>
         {/* Imagen de fondo */}
-        <div className='absolute inset-0 z-0'>
+        <div className='absolute inset-0 z-0 pt-20'>
           <Image
             src='/img/landing/templo.png'
             alt='Templo Shuri - Símbolo histórico del Karate de Okinawa'
             fill
             priority
             className='lg:object-fill object-cover'
+            style={{ objectPosition: 'center 15%' }}
           />
           <div className='absolute inset-0 bg-black/30'></div>
         </div>
 
         {/* Emblemas en las esquinas */}
-        <div className='absolute top-20 left-8 w-24 h-24 md:w-28 md:h-28 z-10'>
+        <div className='absolute top-28 lg:top-36 left-8 w-24 h-24 md:w-28 md:h-28 z-10'>
           <Image
             src='/img/landing/Ellipse1.png'
             alt='Emblema de la Escuela Cariddi'
@@ -59,28 +60,27 @@ const Home = () => {
             height={112}
           />
         </div>
-        <div className='absolute top-20 right-8 w-24 h-24 md:w-28 md:h-28 z-10'>
+        <div className='absolute top-28 lg:top-36 right-8 w-24 h-24 md:w-28 md:h-28 z-10'>
           <Image
             src='/img/landing/Ellipse2.png'
             alt='Emblema de la Tradición Shorin-Ryu Shidokan'
-            width={500}
-            height={500}
-            className='object-cover w-[112px] h-[112px]'
+            width={112}
+            height={112}
           />
         </div>
 
-        {/* Títulos centrados en la parte superior */}
-        <div className='absolute top-58 lg:top-4 left-1/2 transform -translate-x-1/2 z-10 text-center w-full max-w-6xl px-4'>
-          <h1 className='font-oswald text-[42px] sm:text-[32px] md:text-[48px] font-bold uppercase mb-2 text-white leading-tight'>
+        {/* Títulos centrados */}
+        <div className='absolute top-44 md:top-67 left-1/2 transform -translate-x-1/2 z-10 text-center w-full max-w-6xl px-4'>
+          <h1 className='font-oswald text-[32px] sm:text-[36px] md:text-[48px] font-bold uppercase mb-2 text-white leading-tight'>
             ESCUELA CARIDDI DE KARATE-DO Y KOBU-DO
           </h1>
-          <h2 className='font-oswald text-[28px] sm:text-[36px] md:text-[48px] uppercase text-white leading-tight'>
+          <h2 className='font-oswald text-[24px] sm:text-[32px] md:text-[48px] uppercase text-white leading-tight'>
             OKINAWA SHORIN-RYU SHIDOKAN
           </h2>
         </div>
 
         {/* Información del Sensei */}
-        <div className='absolute top-[60%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center text-center justify-center flex-col gap-2'>
+        <div className='absolute top-[65%] md:top-[74%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center text-center justify-center flex-col gap-2'>
           <h3 className='font-oswald text-2xl md:text-4xl uppercase font-bold text-white'>
             SENSEI VICENTE CARIDDI
           </h3>
@@ -92,7 +92,7 @@ const Home = () => {
             href={whatsappUrl}
             target='_blank'
             rel='noopener noreferrer'
-            className='mt-4 bg-[#1A0806] hover:bg-[#2A1816] text-[#ff9e3e] font-oswald text-lg md:text-xl uppercase font-bold py-2 px-6 rounded-md shadow-lg border-2 border-[#ff9e3e]/30 transition-all duration-300 flex items-center'
+            className='mt-6 bg-[#1A0806] hover:bg-[#2A1816] text-[#ff9e3e] font-oswald text-lg md:text-xl uppercase font-bold py-2 px-6 rounded-md shadow-lg border-2 border-[#ff9e3e]/30 transition-all duration-300 flex items-center'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -106,8 +106,8 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Imagen del Sensei posicionada pegada al navbar */}
-        <div className='absolute right-2 sm:right-8 bottom-[96px] w-48 h-64 sm:w-56 sm:h-80 md:w-72 md:h-96 z-10'>
+        {/* Imagen del Sensei */}
+        <div className='absolute right-2 sm:right-8 bottom-4 w-48 h-64 sm:w-56 sm:h-80 md:w-72 md:h-96 z-10'>
           <Image
             src='/img/landing/cariddi1.png'
             alt='Sensei Vicente Cariddi - Maestro de Karate-Do y Kobu-Do, 10° DAN'
