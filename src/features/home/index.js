@@ -6,7 +6,7 @@ const Home = () => {
     <div className='relative h-screen w-full overflow-hidden'>
       {/* Imagen de fondo */}
       <div className='absolute inset-0 z-0'>
-        <Image src='/img/landing/templo.png' alt='Templo Shuri' fill priority />
+        <Image src='/img/landing/templo.png' alt='Templo Shuri' fill priority className='lg:object-fill  object-cover' />
         <div className='absolute inset-0 bg-black/30'></div>
       </div>
 
@@ -23,14 +23,15 @@ const Home = () => {
         <Image
           src='/img/landing/Ellipse2.png'
           alt='Emblema Derecho'
-          width={112}
-          height={112}
+          width={500}
+          height={500}
+          className='object-cover w-[112px] h-[112px]'
         />
       </div>
 
       {/* Títulos centrados en la parte superior */}
-      <div className='absolute top-4 left-1/2 transform -translate-x-1/2 z-10 text-center w-full max-w-6xl px-4'>
-        <h1 className='font-oswald text-[22px] sm:text-[32px] md:text-[48px] font-bold uppercase mb-2 text-white leading-tight'>
+      <div className='absolute top-58 lg:top-4 left-1/2 transform -translate-x-1/2 z-10 text-center w-full max-w-6xl px-4'>
+        <h1 className='font-oswald text-[42px] sm:text-[32px] md:text-[48px] font-bold uppercase mb-2 text-white leading-tight'>
           ESCUELA CARIDDI DE KARATE-DO Y KOBU-DO
         </h1>
         <h2 className='font-oswald text-[28px] sm:text-[36px] md:text-[48px] uppercase text-white leading-tight'>
@@ -39,7 +40,7 @@ const Home = () => {
       </div>
 
       {/* Información del Sensei */}
-      <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center flex-col gap-2'>
+      <div className='absolute top-[60%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center text-center justify-center flex-col gap-2'>
         <h3 className='font-oswald text-2xl md:text-4xl uppercase font-bold text-white'>
           SENSEI VICENTE CARIDDI
         </h3>
