@@ -1,0 +1,23 @@
+{
+  "mainTitle": "EL CAMINO DE LAS MANOS VACIAS",
+  "introduction": {
+    "title": "Para mis alumnos:",
+    "content": "A los alumnos que aman y practican KARATE-DO con todos sus errores, porque solo nos equivocamos cuando hacemos las cosas, a los que también dudan, porque piensan y en las posibilidades del pensamiento se encuentra la acción del desarrollo y en estas artes del espíritu combativo es imperativo el desarrollo de la acción como parte importante de la evolución del practicante, no solo en el dojo, sino en la vida misma. Mi objetivo principal, es que estos apuntes y pensamientos sirvan para mejorar la capacidad intelectual de cada uno de ustedes, para hablar con propiedad sobre su Karate-Do."
+  },
+  "quote": {
+    "text": "El Karate-Do, es como una montaña alta, y el alumno está para escalar y llegar a la cima",
+    "author": "SENSEI VICENTE CARIDDI 10° DAN KANCHO"
+  },
+  "history": {
+    "title": "ORIGEN DEL KARATE-DO",
+    "content": [
+      "Su origen no es muy claro ni perfectamente conocido pero caben dos referencias:",
+      "En tumbas egipcias de hace aproximadamente 5000 años se encuentran dibujos murales con escenas de puligato, probablemente aludían a un sistema rudimentario de defensa con los puños, es verdad también que en Grecia y en Roma ya existía una técnica de lucha bastante avanzada, como las usadas por los gladiadores romanos. También hace aproximadamente 5000 años en la época de los reyes Hoan (Ko), según la tradición oral se crearon las bases del templo chino, o arte del manejo del puño.",
+      "DARUMA TAISHI, tercer hijo del rey de la India, emigró hacia china hace aproximadamente 1400 años y llegó el Templo SHORINSI, en donde practicó la meditación en el Zen, sentado mirando a la pared durante 9 años y al fin comprendió el SARTORI, y comenzó la enseñanza del budismo a los necesitados, a través de dos doctrinas, el EKINKIO y el SENZUIKIO, \"El EKINKIO\" era un tratado sobre la forma de conseguir un cuerpo sano y fuerte a través de ejercicio físico, para introducirse en \"EL SENZUIKIO\" que explicaba la forma de lograr la iluminación del espíritu."
+    ]
+  },
+  "cta": {
+    "text": "Leer más",
+    "link": "/historia-completa"
+  }
+}
