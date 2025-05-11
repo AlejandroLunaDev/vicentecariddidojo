@@ -4,7 +4,7 @@ import { HeroLogos } from '@/features/hero/components/hero-logos';
 
 export function Hero() {
   return (
-    <section className='relative min-h-screen pb-20'>
+    <section className='relative min-h-screen '>
       <div className='absolute inset-0 z-0'>
         <Image
           src='/images/templo-shuri.jpeg'
@@ -51,7 +51,7 @@ export function Hero() {
           </button>
         </div>
       </div>
-      <div className='absolute right-24 z-20 bottom-8 w-[265px] h-[440px]'>
+      <div className='absolute right-24 z-20 bottom-0 w-[265px] h-[480px]'>
             <Image
               src='/images/cariddiHero.png'
               alt='Katsuya'

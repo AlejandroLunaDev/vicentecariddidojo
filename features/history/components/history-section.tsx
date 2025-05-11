@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import content from '@/public/content/karate-history.json';
@@ -19,7 +20,7 @@ export function HistorySection() {
       <div className='container mx-auto px-4 relative z-10'>
         {/* Título principal */}
         <h1 className='text-4xl font-sofia font-extrabold italic text-center mb-12'>
-          "{content.mainTitle}"
+          {content.mainTitle}
         </h1>
 
         {/* Introducción */}
@@ -37,21 +38,22 @@ export function HistorySection() {
           {/* Columna izquierda: Cita y Karateka */}
           <div>
             {/* Cita */}
-            <div className='mb-12 text-center px-24'>
+            <div className='mb-12 text-center px-4 sm:px-12 md:px-24'>
               <blockquote className='font-playball text-2xl text-[#0c3b81] mb-2 leading-relaxed'>
-                "{content.quote.text}"
+                &quot;{content.quote.text}&quot;
               </blockquote>
               <cite className='font-oswald text-2xl block'>
                 {content.quote.author}
               </cite>
             </div>
             {/* Imagen del karateka */}
-            <div className='relative h-[400px] mt-8'>
+            <div className='relative w-full' style={{ height: '400px' }}>
               <Image
                 src='/images/history.png'
                 alt='Karate history illustration'
                 fill
                 className='object-contain object-left'
+                priority
               />
             </div>
           </div>
@@ -76,16 +78,15 @@ export function HistorySection() {
                 </p>
               ))}
             </div>
-              <div className='flex justify-end'>
-
-            {/* Botón Leer más */}
-            <Link
-              href={content.cta.link}
-              className='inline-block mt-8 px-12 py-3 bg-[#0c3b81] text-white font-sofia hover:bg-[#092a5c] transition-colors duration-200'
-            >
-              {content.cta.text}
-            </Link>
-              </div>
+            <div className='flex justify-end'>
+              {/* Botón Leer más */}
+              <Link
+                href={content.cta.link}
+                className='inline-block mt-8 px-12 py-3 bg-[#0c3b81] text-white font-sofia hover:bg-[#092a5c] transition-colors duration-200'
+              >
+                {content.cta.text}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
