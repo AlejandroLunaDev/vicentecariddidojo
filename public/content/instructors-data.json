@@ -1,0 +1,39 @@
+{
+  "title": "Nuestros Instructores",
+  "quote": {
+    "text": "La disciplina es firente. La técnica se transmite. El espíritu se forma",
+    "author": ""
+  },
+  "description": "Con décadas de experiencia y dedicación, nuestros instructores son verdaderos maestros y referentes. Cada uno representa un estilo, una historia y una filosofía. Aquí te los presentamos.",
+  "cta": {
+    "text": "Leer más",
+    "link": "/instructores"
+  },
+  "instructors": [
+    {
+      "name": "Pablo Murillo",
+      "rank": "Sensei 9º Dan",
+      "image": "/images/instructores/profe2.jpg"
+    },
+    {
+      "name": "René Ochoa",
+      "rank": "Sensei 9º Dan",
+      "image": "/images/instructores/profe1.jpg"
+    },
+    {
+      "name": "Fabián Choque",
+      "rank": "Sensei 7º Dan",
+      "image": "/images/instructores/profe3.jpg"
+    },
+    {
+      "name": "Mario Aymal",
+      "rank": "Sensei 5º Dan",
+      "image": "/images/instructores/profe5.jpg"
+    },
+    {
+      "name": "Fernando",
+      "rank": "Sensei 3º Dan",
+      "image": "/images/instructores/profe4.jpg"
+    }
+  ]
+}

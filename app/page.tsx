@@ -1,14 +1,17 @@
-import { Navbar } from "@/features/navigation/components/navbar"
-import { Hero } from "@/features/hero/components/hero"
-import { HistorySection } from "@/features/history/components/history-section"
-import Flag from "@/features/flag/components/flag"
+import { Navbar } from '@/features/navigation/components/navbar';
+import { Hero } from '@/features/hero/components/hero';
+import { HistorySection } from '@/features/history/components/history-section';
+import Flag from '@/features/flag/components/flag';
+import { InstructorsSection } from '@/features/instructors';
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className='min-h-screen'>
       <Navbar />
       <Hero />
-    <HistorySection />
-    <Flag />
+      <HistorySection />
+      <Flag />
+      <InstructorsSection />
     </main>
-  )
+  );
 }
