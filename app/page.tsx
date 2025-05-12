@@ -3,6 +3,8 @@ import { Hero } from '@/features/hero/components/hero';
 import { HistorySection } from '@/features/history/components/history-section';
 import Flag from '@/features/flag/components/flag';
 import { InstructorsSection } from '@/features/instructors';
+import { ContactSection } from '@/features/contact';
+import { Footer } from '@/features/footer';
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <HistorySection />
       <Flag />
       <InstructorsSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
