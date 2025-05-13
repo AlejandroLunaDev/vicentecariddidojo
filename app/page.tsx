@@ -9,8 +9,8 @@ import { Footer } from '@/features/footer';
 export default function Home() {
   return (
     <main className='min-h-screen'>
-      <Navbar />
       <Hero />
+      <Navbar />
       <HistorySection />
       <Flag />
       <InstructorsSection />
