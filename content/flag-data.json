@@ -1,0 +1,40 @@
+{
+  "views": [
+    {
+      "id": "flag",
+      "title": "LA BANDERA NACIONAL",
+      "content": [
+        "La reproducción del Sol en los estandartes fue utilizada como emblema por algunos de los famosos clanes del Japón antiguo. El uso de este símbolo en las banderas ya aparecen mencionado en canales escritos hace unos 600 años, luego que fuera levantada la prohibición de construcción de grandes embarcaciones, después de la visita de la escuadra del comodoro Perry en 1853-4  se hizo necesaria la identificación de los barcos japoneses dedicados al comercio exterior.",
+        "La bandera en su forma presente, fue sugerida como enseña nacional por el Lord NARIAKIRA, SHIMAZU, Jefe del poderoso clan SATSUMA del Japón Meridional, mediante proclamación oficial de 1870, la forma y tamaño regulares de la misma fueron establecidos en una proporción rectangular de 10 de largo, por 7 de ancho con el diámetro del sol igual tres quintos del ancho y su centro desplazado en un centésimo de largo hacia el borde de mástil de la bandera.",
+        "El material no fue estipulado, frecuentemente el mástil utilizado es de bambú, pintado alternadamente con franjas negras separadas entre sí por pocas pulgadas y coronada con una esfera dorada.",
+        "La bandera solar fue desplegada por primera vez como símbolo de la nación en ocasión del viaje a los Estados Unidos en 1860 de la primera delegación diplomática enviada al exterior por el gobierno japonés.",
+        "El POWHATTAM, crucero de la marina estadounidense, fue colocado a disposición del SHOGUNATO para este propósito, el barco enarbolaba la bandera americana en la popa y La bandera del Japón en la proa.",
+        "En 1872, La \"HI-NO-MARU\" (Bandera del Sol) fue usada en una ceremonia nacional por primera vez con motivo de la inauguración del primer ferrocarril en el Japón, por parte del emperador MEIJI."
+      ],
+      "image": "/images/bandera/banderajapon.png",
+      "imageAlt": "Bandera del Sol",
+      "imageBackground": "/images/bandera/fondobandera.png",
+      "imageBackgroundAlt": "Fondo de la bandera",
+      "buttonText": "Ver más"
+    },
+    {
+      "id": "butterfly",
+      "title": "\"KIMIGAYO\" (HIMNO NACIONAL DEL JAPON)",
+      "content": [
+        "KIMIGAYO, el nombre del himno nacional, significa “La soberanía de nuestro emperador”, el texto es tan corto que la misma estrofa se repite dos veces y dice así:",
+        "KIMI GA YO WA CHIYO NI YACHIYO NI SAZAREISHI NO",
+        "WADA TONARI TE KOBE NO MUSU MADE",
+        "La traducción de este texto ofrece B.H. CHAMBERLAIN es la siguiente: 10.000 años de Felipe soberanía sean tuyos.",
+        "Gobierna mi señor hasta que los Guijarros son hoy. Por eternidades unidas, en poderosas rocas se conviertan, en cuyos costados venerables el musgo reverdezca.",
+        "Las palabras han sido tomadas de un antiguo poema cuyo autor ha quedado en el anonimato, en cuanto a la melodía, ha sido adaptada a un viejo tema orquestal japonés, aparentemente el poeta que compuso estos versos pensaba que los guijarros aumentan de tamaño con el transcurso del tiempo y que en miles de años probablemente se transformarían en rocas enormes.",
+        "En el año 1860 el inglés John William Fenton que fue el primer músico mayor del ejército japonés compuso una melodía para el kimigayo esta fue gozada en 1881 en que se designó un comité para seleccionar una melodía más apropiada finalmente fue elegida a la composición presentada por Irimori hay allí músico de la corte.",
+        "Esta melodía modificada había sido compuesta primitivamente para instrumentos japoneses y fue necesario armonizar esta pieza de acuerdo con la escala musical occidental France músico mayor alemán y sucesor de Fenton armonizó la melodía en la escala gregoriana base de la música eclesiástica medieval de este modo la majestuosa armonía alcanza una solemnidad casi religiosa esta versión interpretada en la corte por primera vez en oportunidad del cumpleaños del emperador meiji 1880 y fue adoptada oficialmente como himno nacional en el año 1888."
+      ],
+      "image": "/images/bandera/banderamariposa.png",
+      "imageAlt": "Bandera Mariposa",
+      "imageBackground": "/images/bandera/templokarate.png",
+      "imageBackgroundAlt": "Templo Karate",
+      "buttonText": "Volver atrás"
+    }
+  ]
+}

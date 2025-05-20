@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import content from '@/public/content/karate-history.json';
+import content from '@/content/karate-history.json';
 
 export function HistorySection() {
   return (

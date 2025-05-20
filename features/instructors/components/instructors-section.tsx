@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sofia_Sans, Playfair_Display } from 'next/font/google';
-import instructorsData from '@/public/content/instructors-data.json';
+import instructorsData from '@/content/instructors-data.json';
 import { InstructorCard } from './instructor-card';
 import Link from 'next/link';
 import Image from 'next/image';
