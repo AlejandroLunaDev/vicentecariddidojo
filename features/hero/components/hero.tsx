@@ -14,9 +14,9 @@ export function Hero() {
           priority
         />
       </div>
-      <div className='absolute inset-0 bg-black/60 z-20'></div>
+      <div className='absolute inset-0 bg-black/60 z-20 '></div>
       <div className='w-full relative'>
-        <div className='absolute left-[300px] top-[100px] w-[150px] h-[150px]'>
+        <div className='absolute left-[220px] top-[100px] w-[200px] h-[200px]'>
           <Image
             src='/images/shoeiLeft.png'
             alt='Shoei'
@@ -24,7 +24,7 @@ export function Hero() {
             className='object-contain'
           />
         </div>
-        <div className='absolute left-[380px] top-[100px] w-[150px] h-[150px]'>
+        <div className='absolute left-[330px] top-[100px] w-[200px] h-[200px]'>
           <Image
             src='/images/katsuyaRight.png'
             alt='Katsuya'
@@ -33,8 +33,8 @@ export function Hero() {
           />
         </div>
       </div>
-      <div className='relative z-50 container mx-auto px-4 pt-8 flex flex-col items-center justify-between h-full pb-16'>
-        <div className="flex flex-col items-center">
+      <div className='relative z-50  px-4 pt-8 flex flex-col items-center justify-between h-full  pb-64'>
+        <div className="flex flex-col w-full  items-center  px-12">
           <HeroContent />
           <HeroLogos />
         </div>

@@ -11,9 +11,9 @@ export function Navbar() {
   useEffect(() => {
     const navbar = navbarRef.current;
     const placeholder = placeholderRef.current;
-    
+
     if (!navbar || !placeholder) return;
-    
+
     // Create an Intersection Observer to detect when navbar reaches top of viewport
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -22,10 +22,10 @@ export function Navbar() {
       },
       { threshold: 0 }
     );
-    
+
     // Observe the placeholder element
     observer.observe(placeholder);
-    
+
     return () => {
       observer.disconnect();
     };
@@ -34,8 +34,12 @@ export function Navbar() {
   return (
     <>
       {/* This invisible element marks the navbar's original position */}
-      <div ref={placeholderRef} className="navbar-placeholder" style={{ height: 0 }} />
-      
+      <div
+        ref={placeholderRef}
+        className='navbar-placeholder'
+        style={{ height: 0 }}
+      />
+
       <nav
         ref={navbarRef}
         className={`w-full z-50 bg-[#260808] shadow-lg ${
