@@ -1,0 +1,10 @@
+export { Navbar } from './navigation/components/navbar'
+export { MobileMenu } from './navigation/components/mobile-menu'
+
+export { Hero } from './hero/components/hero'
+export { HistorySection } from './history/components/history-section'
+export { default as Flag } from './flag/components/flag'
+export { InstructorsSection } from './instructors'
+export { ContactSection } from './contact'
+export { Footer } from './footer'
+export { default as ArticlesCarousel } from './carroucel/carroucel'

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { HeroContent } from '@/features/hero/components/hero-content';
-import { HeroLogos } from '@/features/hero/components/hero-logos';
+import { HeroContent } from './hero-content';
+import { HeroLogos } from './hero-logos';
 
 export function Hero() {
   return (

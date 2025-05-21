@@ -42,8 +42,8 @@ export default function ArticlesCarousel() {
         <Carousel className="w-full">
         <CarouselContent className="flex">
           {articles.map((article, index) => (
-            <CarouselItem key={index} className="pl-4 md:basis-1/3 lg:basis-1/4 h-[500px]">
-              <div className="bg-white dark:bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col h-full">
+            <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+              <div className="bg-white dark:bg-neutral-900  overflow-hidden shadow-lg w-[350px] h-[500px] flex flex-col ">
                 <div className="relative h-96 w-full">
                   <Image
                     src={article.image}
