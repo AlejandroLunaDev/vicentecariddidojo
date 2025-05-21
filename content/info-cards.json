@@ -1,0 +1,45 @@
+{
+    "pages": [
+      {
+        "slug": "escuela",
+        "cards": [
+          {
+            "title": "\"ESCUELA\"",
+            "slug": "escuela",
+            "content": "Texto sobre la escuela..."
+          },
+          {
+            "title": "\"EL TRAJE\"",
+            "slug": "traje",
+            "content": "Texto sobre el traje..."
+          },
+          {
+            "title": "\"EL CINTURÓN\"",
+            "slug": "cinturon",
+            "content": "Texto sobre el cinturón..."
+          }
+        ]
+      },
+      {
+        "slug": "karate",
+        "cards": [
+          {
+            "title": "\"KARATE-DO\"",
+            "slug": "karate-do",
+            "content": "Texto sobre el karate-do..."
+          },
+          {
+            "title": "\"EL MAESTRO\"",
+            "slug": "maestro",
+            "content": "Texto sobre el maestro..."
+          },
+          {
+            "title": "\"EL ALUMNO\"",
+            "slug": "alumno",
+            "content": "Texto sobre el alumno..."
+          }
+        ]
+      }
+    ]
+  }
+  

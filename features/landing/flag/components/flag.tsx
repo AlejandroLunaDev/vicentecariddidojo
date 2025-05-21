@@ -33,6 +33,7 @@ export default function Flag() {
 
   return (
     <section
+      id='bandera'
       className='relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat'
       style={{
         backgroundImage: `url(${currentView.imageBackground})`

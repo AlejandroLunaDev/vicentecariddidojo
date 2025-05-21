@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Oswald, Sofia_Sans_Extra_Condensed, Playball } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Navbar } from '@/features/landing';
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+
           {children}
         </ThemeProvider>
       </body>

@@ -4,7 +4,9 @@ import { HeroLogos } from './hero-logos';
 
 export function Hero() {
   return (
-    <section className='relative h-[calc(100vh-84px)] overflow-hidden'>
+    <section
+    id='hero'
+     className='relative h-[calc(100vh-84px)] overflow-hidden'>
       <div className='absolute inset-0 z-0'>
         <Image
           src='/images/templo-shuri.jpeg'

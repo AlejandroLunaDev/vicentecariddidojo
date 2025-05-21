@@ -1,0 +1,39 @@
+{
+    "pages": [
+      {
+        "id": "page-1",
+        "cards": [
+          {
+            "title": "“ESCUELA”",
+            "content": "Lugar de enseñanza o práctica de artes marciales, nuestro dojo se compone fundamentalmente de valores que se refieren a: Valentía, Modestia y Autocontrol, bajo los conceptos de Respeto, Motivación, Disciplina, entre otros.\n\nNuestro Dojo es un espacio de enseñanza y práctica, se comparte tanto en lo individual como en lo grupal.\n\nSe hace hincapié en que la escuela sea reconocida no sólo por su actividad técnica, sino también por el vínculo de compañerismo y dedicación de todos los alumnos y los instructores.\n\nLa escuela busca la auto-superación individual, respetando las diferencias de cada uno, manteniendo una práctica sana, tanto física como mentalmente.\n\nEl esfuerzo, la dedicación y la constancia son valores que rigen nuestra escuela."
+          },
+          {
+            "title": "“EL TRAJE”",
+            "content": "En los orígenes de las artes marciales, el indumento utilizado por los practicantes era una prenda suelta usada en esos días épicos.\n\nPosteriormente se fue adaptando y tomando un atuendo específico para los estilos. El karate adopta el traje blanco, por el color de la pureza, limpieza y humildad.\n\nAños anteriores este traje era más ancho, con cinturones gruesos sin etiquetas.\n\nSe dice que el karateka que entrenaba sin descanso, no lavaba el traje. Este, con el tiempo se tornaba de un color más oscuro, indicando su evolución.\n\nAhora con más recursos, desde vestimenta, tatamis, entre otros, se ha profesionalizado más la enseñanza.\n\nAún así se mantiene la idea de seguir valores y conceptos técnicos únicos, como lo hacen los grandes maestros fundadores.\n\nEl respeto por el uniforme, indica respeto por el arte, la escuela y el prójimo.\n\nLos colores del karate son blanco, rojo y negro. Los pases del practicante cambian su color."
+          },
+          {
+            "title": "“EL CINTURÓN”",
+            "content": "Simbólicamente la idea del aprendizaje es una ascensión de los distintos valores que se enseñan en las artes marciales.\n\nEn sus orígenes se usaba una soga, para sujetar la prenda, y con el paso del tiempo, las técnicas y costumbres fueron cambiando. Días de práctica constante, dedicación, disciplina y estudio, eran necesarios para lograr el reconocimiento.\n\nA partir del Do, los valores son transmitidos y se debe respetar el tiempo y la enseñanza del Sensei.\n\nEl Do no sólo significa la pelea, sino también el camino de la vida.\n\nEl blanco, indica el inicio, el aprendizaje. El negro, la experiencia, la responsabilidad de enseñar.\n\nA medida que el cinturón cambia de color, el alumno también va cambiando su visión del arte y de la práctica.\n\nCada cinturón tiene su significado simbólico. Cada pase es un proceso de evolución."
+          }
+        ]
+      },
+      {
+        "id": "page-2",
+        "cards": [
+          {
+            "title": "“KARATE-DO”",
+            "content": "Los términos KARATE (vacío) y DO (Man) tienen un significado que viene dado con la idea de que las manos vacías como símbolo de lucha sin armas. \n\nVemos en otros escritos que su referencia también conlleva una relación de equilibrio del cuerpo, mente y espíritu. El DO (DOJO, el camino, la vía) expresa la calidad del verdadero karateka.\n\nEs un arte de vida que va más allá de la práctica, se asocia a la superación del ser humano, no sólo desde lo físico, sino también desde lo espiritual.\n\nLas acciones de la vida cotidiana son marcadas por nuestra experiencia como karatecas, por eso se valora el respeto a las costumbres y a los valores humanos universales: cortesía, amistad, modestia, respeto, autocontrol, entre otros.\n\nEl karate ayuda a desarrollar la mente, el cuerpo y el espíritu, potenciando la coordinación, elasticidad, disciplina y concentración.\n\nPracticarlo adecuadamente conlleva a un crecimiento progresivo, pero profundo. Su esencia es DO, el camino. El objetivo principal es superarse y compartir lo aprendido. Nada ni nadie puede reemplazar al verdadero maestro. El maestro puede enseñar, pero el alumno debe aprender. SUSTITUIBLE."
+          },
+          {
+            "title": "“EL MAESTRO”",
+            "content": "En la sociedad actual, el entrenador, profesor o educador es una referencia clave en el proceso de aprendizaje, vinculación y formación del ser humano, su relación en el área que se desenvuelve.\n\nEn las artes marciales la figura del maestro está basada en la preparación física y emocional, así como también en la vocación de servicio.\n\nUn verdadero maestro es el que sabe aprender y adaptarse, quien enseña no por tiempo sino por sabiduría.\n\nEs el que se proyecta en sus alumnos porque siembra valores, y deja huella en su formación. Años de entrenamientos, títulos, diplomas, participación y eventos forman parte del recorrido, pero el valor humano es irremplazable.\n\nEl maestro se reconoce por sus hechos, no por sus palabras. Es la guía y motivación, con sus errores y aciertos. También es una persona de carne y hueso que da lo mejor para sus alumnos.\n\nEl Dojo tiene un alma, una energía que fluye gracias al corazón del maestro. Su presencia marca la evolución del alumno. La constancia, vocación y entrega, es el pilar de la enseñanza."
+          },
+          {
+            "title": "“EL ALUMNO”",
+            "content": "Ensalzado en los relatos más primitivos, el ser humano recibió enseñanza del maestro, para luego poder enseñar a otros lo aprendido.\n\nDesde la historia, el ser humano ha intentado buscar un conocimiento que le permitiera encontrarse con sus limitaciones, pero también con su potencial.\n\nA veces aparece en la infancia por necesidad o inspiración. Otras veces en la adolescencia por motivación o recomendación. Y también de adulto, buscando nuevos caminos y desafíos.\n\nEl respeto, el compromiso, la constancia y la práctica son virtudes del alumno. Los cinturones sólo marcan su avance técnico. Lo importante es la actitud con la que encara los entrenamientos y la capacidad de aprender.\n\nSer alumno es un estado constante del ser humano, donde nunca se deja de aprender. El ego y la soberbia deben quedar fuera del Dojo. Cada clase es un momento para crecer."
+          }
+        ]
+      }
+    ]
+  }
+  
