@@ -1,21 +1,63 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
 import Link from 'next/link';
 import {
   FaUser,
   FaEnvelope,
-  FaMapMarkerAlt,
+  FaCommentAlt,
   FaFacebookF,
   FaWhatsapp,
   FaTiktok,
-  FaInstagram
+  FaInstagram,
+  FaCheckCircle
 } from 'react-icons/fa';
 
 export const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    firstname: '',
+    email: '',
+    message: ''
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError(false);
+    try {
+      const response = await fetch('https://formspree.io/f/mnnanarl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ firstname: '', email: '', message: '' });
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    }
+  };
   return (
     <section
       id='contacto'
@@ -27,20 +69,20 @@ export const ContactSection = () => {
           src='/images/contact/DOJO.png'
           alt='Fondo Templo'
           fill
-          className='object-cover'
+          className='object-cover object-bottom'
           priority
         />
       </div>
 
-      <div className='container mx-auto px-4 relative z-10'>
-        <div className='flex justify-between items-center mb-8'>
+      <div className='px-16 relative z-10'>
+        <div className='w-full flex justify-between items-center mb-8'>
           {/* Logo izquierdo */}
-          <div className='w-24 h-24 relative hidden md:block'>
+          <div className='w-36 h-36 relative hidden md:block'>
             <Image
               src='/images/escudokaridi.png'
               alt='Escudo Kariddi'
-              width={96}
-              height={96}
+              width={120}
+              height={120}
             />
           </div>
 
@@ -50,89 +92,112 @@ export const ContactSection = () => {
           </div>
 
           {/* Logo derecho */}
-          <div className='w-24 h-24 relative hidden md:block'>
+          <div className='w-36 h-36 relative hidden md:block'>
             <Image
               src='/images/ellipse.png'
               alt='Logo Templo'
-              width={96}
-              height={96}
+              width={120}
+              height={120}
               className='rounded-full'
             />
           </div>
         </div>
 
-        <div className='grid md:grid-cols-2 gap-8 items-center'>
+        <div className='px-[80px] flex justify-center gap-10 items-center'>
           {/* Left side - Dojo Image */}
-          <div className='relative'>
-            <div className='flex justify-center mb-4'>
-              <div className='relative'>
-                {/*              <Image
-                  src='/images/ellipse.png'
-                  alt='Background'
-                  width={300}
-                  height={300}
-                  className='mx-auto'
-                /> */}
-                <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                  <Image
-                    src='/images/escudokaridi.png'
-                    alt='Escudo Caridi'
-                    width={200}
-                    height={200}
-                    className='mx-auto'
-                  />
-                </div>
-              </div>
-            </div>
-            <div className='mt-8'>
+          <div className='w-full'>
+            <div className=''>
               <Image
                 src='/images/contact/DOJO.png'
                 alt='Dojo'
-                width={500}
-                height={350}
-                className='rounded-lg mx-auto'
+                width={300}
+                height={300}
+                className='rounded-lg w-full h-full object-cover'
               />
             </div>
           </div>
 
           {/* Right side - Contact Form */}
-          <div>
-            <h3 className='text-xl mb-6 text-center'>"HOMBU CARIDDI - DOJO"</h3>
-            <p className='mb-6 text-center'>
+          <div className=' w-full px-32'>
+            <h3 className='text-2xl mb-6 font-bold text-center'>
+              "HOMBU CARIDDI - DOJO"
+            </h3>
+            <p className='mb-6 font-bold text-xl text-center'>
               Escribanos y responderemos su consulta
             </p>
 
-            <form className='space-y-4'>
-              <div className='bg-[#f8ae63]  rounded-xl overflow-hidden flex items-center px-4 shadow-md'>
-                <FaUser className='mr-2 text-black' />
-                <Input
-                  type='text'
-                  placeholder='Nombre'
-                  className='border-none bg-transparent placeholder-white text-white'
+            {submitted ? (
+              <div className='bg-green-100 rounded-xl p-6 text-center'>
+                <FaCheckCircle
+                  className='mx-auto text-green-600 mb-4'
+                  size={48}
                 />
-              </div>
-              <div className='bg-[#f8ae63] rounded-xl overflow-hidden flex items-center px-4 shadow-md'>
-                <FaEnvelope className='mr-2 text-black' />
-                <Input
-                  type='email'
-                  placeholder='Email'
-                  className='border-none bg-transparent placeholder-white text-white'
-                />
-              </div>
-              <div className='bg-[#f8ae63] rounded-xl overflow-hidden flex items-center px-4 shadow-md'>
-                <FaMapMarkerAlt className='mr-2 text-black' />
-                <Input
-                  type='text'
-                  placeholder='Dirección'
-                  className='border-none bg-transparent placeholder-white text-white'
-                />
-              </div>
-              <div className='text-center'>
-                <Button className='bg-[#3b0c0c] hover:bg-[#550f0f] rounded-full text-white px-10 py-6 text-xl'>
-                  Enviar
+                <h4 className='text-xl font-semibold text-green-800 mb-2'>
+                  ¡Mensaje Enviado!
+                </h4>
+                <p className='text-green-700'>
+                  Gracias por contactarnos. Responderemos a la brevedad.
+                </p>
+                <Button
+                  onClick={() => setSubmitted(false)}
+                  className='mt-4 bg-[#3b0c0c] hover:bg-[#550f0f] rounded-full text-white px-6 py-2'
+                >
+                  Enviar otro mensaje
                 </Button>
               </div>
-            </form>
+            ) : (
+              <form onSubmit={handleSubmit} className='space-y-4'>
+                {error && (
+                  <div className='bg-red-100 text-red-700 p-3 rounded-lg mb-4 text-center'>
+                    Hubo un error al enviar el mensaje. Por favor, intente
+                    nuevamente.
+                  </div>
+                )}
+                <div className='bg-[#f8ae63] rounded-xl overflow-hidden flex items-center px-4 shadow-md'>
+                  <FaUser className='mr-2 text-black' />
+                  <Input
+                    name='firstname'
+                    type='text'
+                    placeholder='Nombre'
+                    value={formData.firstname}
+                    onChange={handleChange}
+                    className='border-none bg-transparent focus:outline-none outline-none placeholder-white text-white ring-0 focus:ring-0'
+                    required
+                  />
+                </div>
+                <div className='bg-[#f8ae63] rounded-xl overflow-hidden flex items-center px-4 shadow-md'>
+                  <FaEnvelope className='mr-2 text-black' />
+                  <Input
+                    name='email'
+                    type='email'
+                    placeholder='Email'
+                    value={formData.email}
+                    onChange={handleChange}
+                    className='border-none bg-transparent placeholder-white text-white'
+                    required
+                  />
+                </div>
+                <div className='bg-[#f8ae63] rounded-xl overflow-hidden flex px-4 shadow-md'>
+                  <FaCommentAlt className='mr-2 text-black mt-3' />
+                  <Textarea
+                    name='message'
+                    placeholder='Mensaje'
+                    value={formData.message}
+                    onChange={handleChange}
+                    className='border-none bg-transparent placeholder-white text-white min-h-[100px] py-3'
+                    required
+                  />
+                </div>
+                <div className='text-center'>
+                  <Button
+                    type='submit'
+                    className='bg-[#3b0c0c] hover:bg-[#550f0f] rounded-full text-white px-10 py-6 text-xl'
+                  >
+                    Enviar
+                  </Button>
+                </div>
+              </form>
+            )}
 
             <div className='flex justify-center space-x-6 mt-8'>
               <Link

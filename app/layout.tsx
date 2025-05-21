@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='es'>
+    <html lang='es' suppressHydrationWarning>
       <body
         className={`${oswald.variable} ${sofiaSansExtraCondensed.variable} ${playball.variable} font-arial`}
       >
