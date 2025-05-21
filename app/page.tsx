@@ -6,7 +6,7 @@ import { InstructorsSection } from '@/features/instructors';
 import { ContactSection } from '@/features/contact';
 import { Footer } from '@/features/footer';
 import { MobileMenu } from '@/features/navigation/components/mobile-menu';
-
+import ArticlesCarousel from '@/features/carroucel/carroucel';
 export default function Home() {
   return (
     <main className='min-h-screen'>
@@ -16,6 +16,7 @@ export default function Home() {
       <HistorySection />
       <Flag />
       <InstructorsSection />
+      <ArticlesCarousel />
       <ContactSection />
       <Footer />
     </main>
