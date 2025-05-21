@@ -5,10 +5,12 @@ import Flag from '@/features/flag/components/flag';
 import { InstructorsSection } from '@/features/instructors';
 import { ContactSection } from '@/features/contact';
 import { Footer } from '@/features/footer';
+import { MobileMenu } from '@/features/navigation/components/mobile-menu';
 
 export default function Home() {
   return (
     <main className='min-h-screen'>
+      <MobileMenu />
       <Hero />
       <Navbar />
       <HistorySection />

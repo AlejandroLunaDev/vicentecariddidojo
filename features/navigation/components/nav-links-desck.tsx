@@ -13,7 +13,7 @@ export function NavLinks() {
 
   const bottomRowLinks = [
     { href: "/reflexiones-de-sensei", label: "REFLEXIONES DE SENSEI" },
-    { href: "/contacto", label: "CONTACTO" },
+    { href: "/#contacto", label: "CONTACTO" },
   ]
 
   return (
