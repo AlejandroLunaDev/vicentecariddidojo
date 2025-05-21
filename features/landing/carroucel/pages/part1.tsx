@@ -1,20 +1,32 @@
 'use client';
 
 import Image from 'next/image';
+import data from '@/content/carroucel-data.json';
 import { Navbar } from '../../navigation/components/navbar';
+type Card = {
+    title: string;
+    content: string;
+  };
+  
+  type PageContent = {
+    id: string;
+    cards: Card[];
+  };
+  
+  type Props = {
+    data: {
+      content: PageContent;
+    };
+  };
 
-export default function InfoCardsPage({
-  data
-}: {
-  data: { content: { cards: { title: string; content: string }[] } };
-}) {
-  // Use the provided data instead of importing
+export default function InfoCardsPage({ data}: Props) {
+  // Use the first page data which contains the three cards we need
   const pageData = data.content;
 
   return (
-    <section className='relative w-full flex justify-center items-center h-screen flex-col'>
+    <section className='relative w-full px-4 md:px-20  flex flex-col  justify-center items-center min-h-screen'>
       <div className='absolute top-0 left-0 w-full h-full'>
-      <Navbar />
+          <Navbar />
         <Image
           src='/images/carroucel/fondocintos.png'
           alt='fondo'
@@ -24,7 +36,7 @@ export default function InfoCardsPage({
       </div>
       <div className='absolute bg-white/50 w-full h-full'></div>
 
-      <div className='relative z-10 flex flex-col md:flex-row justify-center items-stretch gap-6 max-w-7xl mx-auto mt-28'>
+      <div className='relative z-10 flex flex-col md:flex-row justify-center items-stretch gap-6 max-w-7xl mx-auto mt-20'>
         {pageData.cards.map((card, index) => (
           <article
             key={index}
