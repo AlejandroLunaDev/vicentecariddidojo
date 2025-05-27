@@ -12,27 +12,27 @@
   "instructors": [
     {
       "name": "Pablo Murillo",
-      "rank": "Sensei 9º Dan",
+      "rank": "Instructor 9º Dan",
       "image": "/images/instructores/profe2.jpg"
     },
     {
       "name": "René Ochoa",
-      "rank": "Sensei 9º Dan",
+      "rank": "Instructor 9º Dan",
       "image": "/images/instructores/profe1.jpg"
     },
     {
       "name": "Fabián Choque",
-      "rank": "Sensei 7º Dan",
+      "rank": "Instructor 7º Dan",
       "image": "/images/instructores/profe3.jpg"
     },
     {
       "name": "Mario Aymal",
-      "rank": "Sensei 5º Dan",
+      "rank": "Instructor 5º Dan",
       "image": "/images/instructores/profe5.jpg"
     },
     {
       "name": "Fernando",
-      "rank": "Sensei 3º Dan",
+      "rank": "Instructor 3º Dan",
       "image": "/images/instructores/profe4.jpg"
     }
   ]
